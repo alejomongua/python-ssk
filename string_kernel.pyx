@@ -28,7 +28,7 @@ def ssk_array(array.array s_, array.array t_, int n, float lbda, accum=False):
     lens, lent = len(s), len(t)
     #k_prim = (-1)*np.ones( (n+1, lens, lent) )
     cdef np.ndarray[np.float64_t, ndim=3] \
-        k_prim = np.zeros((n, lens, lent), dtype=np.float)
+        k_prim = np.zeros((n, lens, lent), dtype=float)
 
     k_prim[0,:,:] = 1
 
